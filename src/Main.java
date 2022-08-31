@@ -1,12 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        int number = 97;
+
+        int number = 89;
+
         boolean prime = false;
         // method using for
-        for (int i = 2; i < number; i++) {
+        for (int i = 2; i < number/2; i++) {
            if (number % i == 0) {
                 prime = false;
-                 break;
+                break;
             }
             else
                 prime = true;
@@ -18,7 +20,7 @@ public class Main {
         // method using while
         int n = 2;
         boolean prime2 = false;
-        while (n<number)
+        while (n< number/2)
         {
             if (number % n == 0) {
             prime2 = false;
